@@ -57,15 +57,15 @@
 
     <dimen name="default_view_pager_image_size_212">212dp</dimen>
     <dimen name="default_view_pager_image_size">188dp</dimen>
-    <dimen name="default_image_size">144dp</dimen>
-    <dimen name="default_image_size_medium">96dp</dimen>
+    <dimen name="default_image_size_144dp">144dp</dimen>
+    <dimen name="default_image_size_96dp">96dp</dimen>
     <dimen name="default_image_size_74dp">74dp</dimen>
     <dimen name="default_image_size_64dp">64dp</dimen>
     <dimen name="default_image_size_54dp">54dp</dimen>
-    <dimen name="default_image_size_small">48dp</dimen>
+    <dimen name="default_image_size_48dp">48dp</dimen>
     <dimen name="default_image_size_32dp">32dp</dimen>
-    <dimen name="default_image_icon_medium">24dp</dimen>
-    <dimen name="default_image_icon_small">18dp</dimen>
+    <dimen name="default_image_size_24dp">24dp</dimen>
+    <dimen name="default_image_size_18dp">18dp</dimen>
     <dimen name="progress_bar_height">4dp</dimen>
 
     <dimen name="default_card_radius">16dp</dimen>
@@ -79,6 +79,7 @@
     <dimen name="card_radius_14dp">14dp</dimen>
     <dimen name="card_radius_20dp">20dp</dimen>
 
+    <dimen name="font_40">40sp</dimen>
     <dimen name="font_36">36sp</dimen>
     <dimen name="font_28">28sp</dimen>
     <dimen name="font_24">24sp</dimen>
