@@ -1,4 +1,4 @@
-package com.example.shopify
+package com.example.shopify.ui.home
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -6,11 +6,12 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
-import com.example.shopify.databinding.FragmentSecondBinding
+import com.example.shopify.R
+import com.example.shopify.databinding.FragmentFirstBinding
 
-class SecondFragment : Fragment() {
+class FirstFragment : Fragment() {
 
-    private var _binding: FragmentSecondBinding? = null
+    private var _binding: FragmentFirstBinding? = null
     private val binding get() = _binding!!
 
     override fun onCreateView(
@@ -18,7 +19,7 @@ class SecondFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View {
 
-        _binding = FragmentSecondBinding.inflate(inflater, container, false)
+        _binding = FragmentFirstBinding.inflate(inflater, container, false)
         return binding.root
 
     }
@@ -26,8 +27,8 @@ class SecondFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        binding.buttonSecond.setOnClickListener {
-            findNavController().navigate(R.id.SecondFragment)
+        binding.buttonFirst.setOnClickListener {
+            findNavController().navigate(R.id.FirstFragment)
         }
     }
 

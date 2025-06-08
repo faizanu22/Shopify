@@ -3,17 +3,17 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/FirstFragment">
+    app:startDestination="@id/LoginFragment">
 
     <fragment
-        android:id="@+id/FirstFragment"
-        android:name="com.example.shopify.FirstFragment"
+        android:id="@+id/LoginFragment"
+        android:name="com.example.shopify.ui.login.LoginFragment"
         android:label="@string/first_fragment_label"
-        tools:layout="@layout/fragment_first"/>
+        tools:layout="@layout/fragment_login"/>
 
     <fragment
         android:id="@+id/SecondFragment"
-        android:name="com.example.shopify.SecondFragment"
+        android:name="com.example.shopify.ui.home.SecondFragment"
         android:label="@string/second_fragment_label"
         tools:layout="@layout/fragment_second"/>
 

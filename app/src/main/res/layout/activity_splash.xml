@@ -5,8 +5,8 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorPrimary"
-    tools:context=".SplashActivity">
+    android:background="@color/color_primary"
+    tools:context=".ui.base.SplashActivity">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="wrap_content"
@@ -20,7 +20,7 @@
             android:id="@+id/imageLogo"
             android:layout_width="@dimen/default_image_size_54dp"
             android:layout_height="@dimen/default_image_size_54dp"
-            android:src="@drawable/ic_app_logo"
+            android:src="@drawable/ic_app_logo_white"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
@@ -31,7 +31,7 @@
             android:layout_height="wrap_content"
             android:maxLines="1"
             android:text="Shopify"
-            android:textColor="@color/colorWhite"
+            android:textColor="@color/color_white"
             android:textSize="@dimen/font_40"
             android:textStyle="bold"
             android:ellipsize="end"
@@ -47,7 +47,7 @@
             android:layout_height="wrap_content"
             android:maxLines="1"
             android:text="Online Grocery"
-            android:textColor="@color/colorWhite"
+            android:textColor="@color/color_white"
             android:textSize="@dimen/font_14"
             android:layout_marginTop="@dimen/margin_4"
             app:layout_constraintBottom_toBottomOf="@+id/imageLogo"
