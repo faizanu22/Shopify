@@ -1,4 +1,4 @@
-package com.example.shopify.ui.home
+package com.example.shopify.ui.login
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -7,30 +7,26 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
 import com.example.shopify.R
-import com.example.shopify.databinding.FragmentSecondBinding
+import com.example.shopify.databinding.FragmentSignUpBinding
 
-class SecondFragment : Fragment() {
-
-    private var _binding: FragmentSecondBinding? = null
-    private val binding get() = _binding!!
+class SignUpFragment : Fragment() {
+    private lateinit var binding: FragmentSignUpBinding
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View {
-
-        _binding = FragmentSecondBinding.inflate(inflater, container, false)
+    ): View? {
+        binding = FragmentSignUpBinding.inflate(inflater)
         return binding.root
-
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-
-    }
-
-    override fun onDestroyView() {
-        super.onDestroyView()
-        _binding = null
+        binding.buttonSignUp.setOnClickListener {
+            findNavController().navigate(R.id.LoginFragment)
+        }
+        binding.buttonLogin.setOnClickListener {
+            binding.buttonSignUp.performClick()
+        }
     }
 }

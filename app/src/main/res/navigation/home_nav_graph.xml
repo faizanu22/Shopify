@@ -3,18 +3,11 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/FirstFragment">
+    app:startDestination="@id/HomeFragment">
 
     <fragment
-        android:id="@+id/FirstFragment"
-        android:name="com.example.shopify.ui.home.FirstFragment"
-        android:label="@string/first_fragment_label"
+        android:id="@+id/HomeFragment"
+        android:name="com.example.shopify.ui.home.HomeFragment"
+        android:label="@string/home_lable"
         tools:layout="@layout/fragment_first"/>
-
-    <fragment
-        android:id="@+id/SecondFragment"
-        android:name="com.example.shopify.ui.home.SecondFragment"
-        android:label="@string/second_fragment_label"
-        tools:layout="@layout/fragment_second"/>
-
 </navigation>

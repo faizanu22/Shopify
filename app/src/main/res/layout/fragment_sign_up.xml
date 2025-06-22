@@ -19,12 +19,12 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <androidx.appcompat.widget.AppCompatTextView
-        android:id="@+id/textTitleLogin"
+        android:id="@+id/textTitleSignUp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginVertical="@dimen/margin_48"
         android:maxLines="2"
-        android:text="@string/str_login"
+        android:text="@string/str_signup"
         android:textAlignment="textStart"
         android:textColor="@color/color_black"
         android:textSize="@dimen/font_28"
@@ -37,23 +37,44 @@
         android:layout_height="wrap_content"
         android:layout_marginVertical="@dimen/margin_8"
         android:maxLines="2"
-        android:text="@string/str_enter_your_email_password"
+        android:text="@string/str_enter_your_credentials"
         android:textAlignment="textStart"
         android:textColor="@color/color_light_gray"
         android:textSize="@dimen/font_16"
-        app:layout_constraintTop_toBottomOf="@+id/textTitleLogin" />
+        app:layout_constraintTop_toBottomOf="@+id/textTitleSignUp" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textTitleUserName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="@dimen/margin_48"
+        android:maxLines="2"
+        android:text="@string/str_user_name"
+        android:textAlignment="textStart"
+        android:textColor="@color/color_light_gray"
+        android:textSize="@dimen/font_16"
+        app:layout_constraintTop_toBottomOf="@+id/textTitleEmailPassword" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/editTextUserName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_8"
+        android:inputType="textEmailAddress"
+        android:textColor="@color/color_black"
+        app:layout_constraintTop_toBottomOf="@+id/textTitleUserName" />
 
     <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/textTitleEmail"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginVertical="@dimen/margin_48"
+        android:layout_marginVertical="@dimen/margin_16"
         android:maxLines="2"
         android:text="@string/str_email"
         android:textAlignment="textStart"
         android:textColor="@color/color_light_gray"
         android:textSize="@dimen/font_16"
-        app:layout_constraintTop_toBottomOf="@+id/textTitleEmailPassword" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextUserName" />
 
     <androidx.appcompat.widget.AppCompatEditText
         android:id="@+id/editTextEmail"
@@ -87,14 +108,14 @@
         app:layout_constraintTop_toBottomOf="@+id/textTitlePassword" />
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/buttonLogin"
+        android:id="@+id/buttonSignUp"
         android:layout_width="match_parent"
         android:layout_height="@dimen/default_button"
         android:layout_marginHorizontal="@dimen/margin_16"
         android:layout_marginTop="@dimen/margin_48"
         android:background="@drawable/bg_rounded"
         android:backgroundTint="@color/color_primary"
-        android:text="@string/str_login"
+        android:text="@string/str_signup"
         android:textColor="@color/color_white"
         app:layout_constraintTop_toBottomOf="@+id/editTextPassword" />
 
@@ -104,25 +125,24 @@
         android:gravity="center"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buttonLogin">
+        app:layout_constraintTop_toBottomOf="@+id/buttonSignUp">
 
         <androidx.appcompat.widget.AppCompatTextView
-            android:id="@+id/textTitleSignUp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginVertical="@dimen/margin_16"
             android:maxLines="1"
-            android:text="@string/str_dont_have_account"
+            android:text="@string/str_already_have_account"
             android:textAlignment="textStart"
             android:textColor="@color/color_light_gray"
             android:textSize="@dimen/font_16" />
 
         <androidx.appcompat.widget.AppCompatTextView
-            android:id="@+id/buttonSignUp"
+            android:id="@+id/buttonLogin"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/margin_4"
             android:textColor="@color/color_black"
-            android:text="@string/str_signup" />
+            android:text="@string/str_login" />
     </androidx.appcompat.widget.LinearLayoutCompat>
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -9,7 +9,7 @@ import androidx.navigation.fragment.findNavController
 import com.example.shopify.R
 import com.example.shopify.databinding.FragmentFirstBinding
 
-class FirstFragment : Fragment() {
+class HomeFragment : Fragment() {
 
     private var _binding: FragmentFirstBinding? = null
     private val binding get() = _binding!!
@@ -26,10 +26,6 @@ class FirstFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-
-        binding.buttonFirst.setOnClickListener {
-            findNavController().navigate(R.id.FirstFragment)
-        }
     }
 
     override fun onDestroyView() {
