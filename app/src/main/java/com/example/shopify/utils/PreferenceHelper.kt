@@ -2,7 +2,6 @@ package com.example.shopify.utils
 
 import android.content.Context
 import android.content.SharedPreferences
-import androidx.core.content.edit
 
 class PreferenceHelper {
     companion object {
@@ -10,6 +9,7 @@ class PreferenceHelper {
         private const val USER_EMAIL = "UserEmail"
         private const val USER_NAME = "UserName"
         private const val KEY_USER_AGE = "userAge"
+        private const val KEY_ONBOARDING_SHOW = "ONBOARDING_SHOW"
         private const val KEY_USER_GENDER = "userGender"
         private const val KEY_PROFILE_IMAGE = "profileImage"
         private const val USER_ID = "UserID"
@@ -33,6 +33,14 @@ class PreferenceHelper {
         fun isUserLoggedIn(context: Context): Boolean {
             val userEmail = getUserEmail(context)
             return userEmail != null && userEmail != VERSION_NAME
+        }
+
+        fun getOnBoardShow(context: Context): Boolean {
+            return getSharedPrefs(context).getBoolean(KEY_ONBOARDING_SHOW,false)
+        }
+
+        fun setOnBoardShow(context: Context, onShow: Boolean) {
+            getSharedPrefs(context).edit().putBoolean(KEY_ONBOARDING_SHOW, onShow).commit()
         }
 
        /* fun saveProfileData(context: Context, profile: ProfileData?) {
