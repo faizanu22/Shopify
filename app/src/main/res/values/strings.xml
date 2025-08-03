@@ -16,5 +16,13 @@
     <string name="str_enter_your_credentials">Enter your credentials to continue</string>
     <string name="str_user_name">UserName</string>
     <string name="str_already_have_account">Already have an Account?</string>
+    <string name="str_home">Home</string>
+    <string name="str_cart">Cart</string>
+    <string name="str_like">Like</string>
+    <string name="str_account">Account</string>
+    <string name="str_exclusive_offer">Exclusive Offer</string>
+    <string name="str_best_selling">Best Selling</string>
+    <string name="str_or">Or</string>
+    <string name="str_continue_with_google">Continue With Google</string>
 
 </resources>

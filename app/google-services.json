@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "772576565968",
+    "project_id": "shopify-e7998",
+    "storage_bucket": "shopify-e7998.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:772576565968:android:779f4d4023e73ba93a1cd5",
+        "android_client_info": {
+          "package_name": "com.example.shopify"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "772576565968-o1uo8614jou1cljfa9e7rdfmgqtb9b19.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.shopify",
+            "certificate_hash": "b3a2abb6039805f1e5b721aa0056c1dd2c0ae36b"
+          }
+        },
+        {
+          "client_id": "772576565968-gilfdrhgilrum0aau7f1v5mtt6qhjnt0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDBZ0gReBf8z3Pblt1zwyaOrvlk40r4Tms"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "772576565968-gilfdrhgilrum0aau7f1v5mtt6qhjnt0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

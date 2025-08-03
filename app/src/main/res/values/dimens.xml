@@ -57,6 +57,7 @@
 
     <dimen name="default_view_pager_image_size_212">212dp</dimen>
     <dimen name="default_view_pager_image_size">188dp</dimen>
+
     <dimen name="default_image_size_144dp">144dp</dimen>
     <dimen name="default_image_size_96dp">96dp</dimen>
     <dimen name="default_image_size_74dp">74dp</dimen>
@@ -66,6 +67,7 @@
     <dimen name="default_image_size_32dp">32dp</dimen>
     <dimen name="default_image_size_24dp">24dp</dimen>
     <dimen name="default_image_size_18dp">18dp</dimen>
+
     <dimen name="progress_bar_height">4dp</dimen>
 
     <dimen name="default_card_radius">16dp</dimen>
