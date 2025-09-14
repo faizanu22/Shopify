@@ -1,0 +1,27 @@
+package com.example.shopify.ui.like
+
+import android.os.Bundle
+import androidx.fragment.app.Fragment
+import android.view.LayoutInflater
+import android.view.View
+import android.view.ViewGroup
+import com.example.shopify.R
+import com.example.shopify.databinding.FragmentFirstBinding
+import com.example.shopify.databinding.FragmentLikeBinding
+
+class LikeFragment : Fragment() {
+
+    private lateinit var binding: FragmentLikeBinding
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+    }
+
+    override fun onCreateView(
+        inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?
+    ): View {
+
+        binding = FragmentLikeBinding.inflate(inflater, container, false)
+        return binding.root
+    }
+}
