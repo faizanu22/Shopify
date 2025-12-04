@@ -1,23 +1,25 @@
 package com.example.shopify.ui.account
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.navigation.fragment.findNavController
 import com.example.shopify.R
 import com.example.shopify.databinding.FragmentAccountBinding
 import com.example.shopify.databinding.FragmentLikeBinding
+import com.example.shopify.ui.base.SplashActivity
+import com.example.shopify.ui.home.HomeMainActivity
+import com.example.shopify.ui.login.LoginActivity
+import com.example.shopify.utils.PreferenceHelper
 
 class AccountFragment : Fragment() {
 
     private var _binding: FragmentAccountBinding? = null
     private val binding get() = _binding!!
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-
-    }
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?
     ): View {
@@ -26,4 +28,13 @@ class AccountFragment : Fragment() {
         return binding.root
     }
 
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        binding.buttonLogOut.setOnClickListener {
+            PreferenceHelper.setUserEmail(requireContext(), "")
+            startActivity(Intent(requireContext(), SplashActivity::class.java))
+            requireActivity().finish()
+//            findNavController().navigateUp()
+        }
+    }
 }

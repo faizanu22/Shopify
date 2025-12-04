@@ -108,15 +108,6 @@
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
 
-                <androidx.appcompat.widget.AppCompatTextView
-                    android:id="@+id/textTermAndCondition"
-                    style="@style/MediumTextSizeTitle"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/str_terms_conditions"
-                    tools:layout_editor_absoluteX="58dp"
-                    tools:layout_editor_absoluteY="24dp" />
-
             </androidx.constraintlayout.widget.ConstraintLayout>
 
             <View
@@ -189,6 +180,18 @@
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/textTermAndCondition"
+                    style="@style/MediumTextSizeTitle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/str_terms_conditions"
+                    android:layout_marginStart="@dimen/margin_20"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@id/imageArrowTermAndCondition"
+                    app:layout_constraintStart_toEndOf="@+id/imageTermAndCondition"
+                    app:layout_constraintTop_toTopOf="parent"/>
 
                 <androidx.appcompat.widget.AppCompatImageView
                     android:id="@+id/imageArrowTermAndCondition"

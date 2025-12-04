@@ -56,6 +56,7 @@ class LoginFragment : Fragment() {
                 firebaseAuth.signInWithEmailAndPassword(email, pass).addOnCompleteListener {
                     if (it.isSuccessful) {
                         startActivity(Intent(requireContext(), HomeMainActivity::class.java))
+                        requireActivity().finish()
                         PreferenceHelper.setUserEmail(requireContext(), email)
                     } else {
                         Toast.makeText(

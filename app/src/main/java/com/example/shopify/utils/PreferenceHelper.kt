@@ -32,7 +32,7 @@ class PreferenceHelper {
 
         fun isUserLoggedIn(context: Context): Boolean {
             val userEmail = getUserEmail(context)
-            return userEmail != null && userEmail != VERSION_NAME
+            return userEmail?.isNotEmpty() == true
         }
 
         fun getOnBoardShow(context: Context): Boolean {
